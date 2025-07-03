@@ -72,3 +72,22 @@ export const createListing = (data) => {
 
   return newListing;
 };
+
+// Deletes a listing by id
+export const deleteListing = (id) => {
+  const listings = getDatabaseTable('listings');
+  if (!listings) {
+    console.log('No listings table found');
+    return false;
+  }
+
+  const index = listings.findIndex((listing) => listing.id === id);
+  if (index === -1) {
+    console.log('Listing not found');
+    return false;
+  }
+
+  listings.splice(index, 1); // Remove the listing
+  setDatabaseTable('listings', listings);
+  return true;
+};

@@ -10,6 +10,7 @@ import ProfilePage from '@/pages/ProfilePage';
 import SignInPage from '@/pages/SignInPage';
 
 import App from './App';
+import AboutPage from './pages/AboutPage';
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,14 @@ const router = createBrowserRouter([
         element: (
           <Route isProtected>
             <ProfilePage />
+          </Route>
+        ),
+      },
+      {
+        path: '/about',
+        element: (
+          <Route isProtected>
+            <AboutPage />
           </Route>
         ),
       },

@@ -11,7 +11,12 @@ import {
   verifyToken,
   withAuth,
 } from './helpers';
-import { createListing, getListingById, getListings } from './listings';
+import {
+  createListing,
+  deleteListing,
+  getListingById,
+  getListings,
+} from './listings';
 import { getLocationById } from './locations';
 import { getReviewsByListingId } from './reviews';
 import { getUser, getUserById } from './users';
@@ -70,6 +75,20 @@ adapter.onPost('/api/listings').reply(
     const listing = createListing(JSON.parse(data));
 
     return [200, listing];
+  }),
+);
+
+// Deletes a listing
+adapter.onDelete(/\/api\/listings\/\d+/).reply(
+  withAuth((config) => {
+    const id = parseInt(config.url.split('/').pop(), 10);
+    const success = deleteListing(id);
+
+    if (!success) {
+      return [404, { message: 'Listing not found' }];
+    }
+
+    return [200];
   }),
 );
 

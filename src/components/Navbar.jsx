@@ -34,7 +34,7 @@ const NavBar = () => {
         <div className='flex-end flex flex-row items-center gap-8'>
           <Link to='/listings/create'>Create Listing</Link>
           <Link to='/favorites'>Favorites</Link>
-
+          <Link to='/about'>About</Link>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Link>Account</Link>

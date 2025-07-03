@@ -3,11 +3,15 @@ import { useParams } from 'react-router-dom';
 import DataRenderer from '@/components/DataRenderer';
 import ListingDetailsCard from '@/components/ListingDetailsCard';
 import ReviewList from '@/components/ReviewList';
+import { Button } from '@/components/ui';
+import useDeleteListingMutation from '@/hooks/mutations/useDeleteListingMutation';
 import useListingDetailsQuery from '@/hooks/queries/useListingDetailsQuery';
 import useListingReviewsQuery from '@/hooks/queries/useListingReviewsQuery';
 
 const ListingDetailsPage = () => {
   const { listingId } = useParams();
+
+  const deleteListingMutation = useDeleteListingMutation();
 
   const {
     data: { data: listing } = {},
@@ -36,6 +40,15 @@ const ListingDetailsPage = () => {
           </DataRenderer>
         </div>
       )}
+
+      {/* <Button
+        variant='destructive'
+        onClick={() => {
+          deleteListingMutation.mutate(Number(listingId));
+        }}
+      >
+        Delete Listing
+      </Button> */}
     </div>
   );
 };

@@ -8,7 +8,7 @@ describe('HomePage', () => {
     cy.visit('http://localhost:5173/');
   });
 
-  it('renders the home page with essential elements', () => {
+  it('renders the homepage with essential elements', () => {
     cy.get('[data-testid="home-page"]').should('exist');
     cy.get('[data-testid="listing-filters"]').should('exist');
     cy.get('[data-testid="listing-list"]').should('exist');
