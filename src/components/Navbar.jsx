@@ -57,15 +57,16 @@ const NavBar = () => {
             icon={<HomeIcon className='cursor-pointer' />}
           />
           <IconLinkWithTooltip
-            to='/listings/create'
-            label='Create Listing'
-            icon={<CirclePlus />}
-          />
-          <IconLinkWithTooltip
             to='/favorites'
             label='Favorites'
             icon={<HeartIcon />}
           />
+          <IconLinkWithTooltip
+            to='/listings/create'
+            label='Create Listing'
+            icon={<CirclePlus />}
+          />
+
           <IconLinkWithTooltip
             to='/about'
             label='About Page'
