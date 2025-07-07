@@ -76,7 +76,7 @@ const NavBar = () => {
           <DropdownMenu>
             <Tooltip>
               <TooltipTrigger asChild>
-                <DropdownMenuTrigger asChild>
+                <DropdownMenuTrigger asChild className='cursor-pointer'>
                   <CircleUser />
                 </DropdownMenuTrigger>
               </TooltipTrigger>
