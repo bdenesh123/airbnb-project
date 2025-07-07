@@ -1,10 +1,9 @@
-// components/PopupCard.jsx
-
 import { RotateCcw, Tablet } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 import logo from '@/assets/Logo/logo3.png';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+
+import { Card, CardContent } from './ui';
 
 const UnsupportedDeviceCard = ({ isOpen }) => {
   const [show, setShow] = useState(false);
