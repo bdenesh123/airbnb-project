@@ -8,7 +8,7 @@ import useResponsive from './hooks/useResponsive';
 
 const App = () => {
   const { token } = useAuth();
-  const isPortrait = useResponsive('(max-width: 768px)');
+  const isPortrait = useResponsive('(max-width: 720px)');
 
   return (
     <>

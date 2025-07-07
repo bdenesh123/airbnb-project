@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useResponsive = (breakpoint = '(max-width: 768px)') => {
+const useResponsive = (breakpoint = '(max-width: 720px)') => {
   const [isMobileOrPortrait, setIsMobileOrPortrait] = useState(false);
 
   useEffect(() => {
