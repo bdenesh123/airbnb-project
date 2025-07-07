@@ -22,6 +22,6 @@ Deployment: Hosted on Vercel
 
 ## Live Demo & Code
 
-Live Site: [Add live link here]
+Live Site: https://react-airbnb-project.vercel.app
 
 GitHub Repo: https://github.com/bdenesh123/airbnb-project
