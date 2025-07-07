@@ -10,8 +10,6 @@ import {
   Separator,
 } from '@/components/ui';
 
-import DevbarMenu from './Devbar/DevbarMenu';
-
 const NavBar = () => {
   const { setToken, setUser } = useAuth();
 
@@ -32,9 +30,10 @@ const NavBar = () => {
       <div className='flex flex-row items-center justify-between gap-8 px-8 py-4'>
         <Link to='/'>Home</Link>
         <div className='flex-end flex flex-row items-center gap-8'>
+          <Link to='/about'>About</Link>
           <Link to='/listings/create'>Create Listing</Link>
           <Link to='/favorites'>Favorites</Link>
-          <Link to='/about'>About</Link>
+
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Link>Account</Link>
@@ -48,7 +47,6 @@ const NavBar = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <DevbarMenu />
         </div>
       </div>
       <Separator />

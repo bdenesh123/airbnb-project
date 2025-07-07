@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
 import { useAuth } from '@/components/AuthProvider';
-import Devbar from '@/components/Devbar/Devbar';
 import NavBar from '@/components/Navbar';
 
 const App = () => {

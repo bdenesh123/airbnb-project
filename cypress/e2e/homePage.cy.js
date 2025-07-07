@@ -2,7 +2,7 @@ describe('HomePage', () => {
   beforeEach(() => {
     // Preserve the session to avoid logging in before each test
     cy.session('user', () => {
-      cy.login('demo@cosdensolutions.io', 'cosdensolutions');
+      cy.login('demo@example.com', 'demoaccount');
     });
 
     cy.visit('http://localhost:5173/');

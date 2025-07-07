@@ -1,35 +1,27 @@
-# Project React - Cosden Solutions
+# Airbnb-Inspired Booking Platform (React Project)
 
-Learn React by building a real-world project.
+This is a mock booking platform inspired by Airbnb and Booking.com, built to explore and implement core React development concepts.
 
-## Running the project
+## Features & Stack:
 
-To run the project, follow these steps.
+Hooks & State Management: useState, useEffect, useRef, useContext, React Query, Redux Toolkit, custom hooks
 
-1. Install all dependencies
+Routing: React Router with dynamic and protected routes
 
-```sh
-npm install
-```
+Authentication: JWT (access & refresh tokens) via jose, integrated with Redux and Context
 
-2. Run the project locally
+Forms: Built and validated using React Hook Form
 
-```sh
-npm run dev
-```
+API & Data: Axios for API calls, React Query for data fetching & caching
 
-3. Open your browser and visit `http://localhost:5173`
+Styling: Tailwind CSS, Shadcn, Radix UI, Lucide icons
 
-## Working with the project
+Testing: End-to-end testing with Cypress
 
-Here are some helpful guides and tips on working with the project.
+Deployment: Hosted on Vercel
 
-### Linting and formatting
+## Live Demo & Code
 
-The project has setup `eslint` and `prettier` for all linting and formatting without any extra configuration.
+Live Site: [Add live link here]
 
-To fix any linting or formatting issues across all relevant files, run this command
-
-```sh
-npm run fix
-```
+GitHub Repo: https://github.com/bdenesh123/airbnb-project

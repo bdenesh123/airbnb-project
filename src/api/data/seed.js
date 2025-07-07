@@ -6,6 +6,7 @@ import { locations } from './locations';
 import { reviews } from './reviews';
 import { users } from './users';
 
+// localStorage.removeItem('project-react-db');
 // Add all data to localstorage to simulate database
 export const seedLocalDatabase = () => {
   const database = getItem(env.DB_KEY);
