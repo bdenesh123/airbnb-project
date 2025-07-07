@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import logo from '@/assets/Logo/logo3.png';
 import { Card, CardContent } from '@/components/ui';
 
-const UnsupportedDeviceCard = ({ isOpen }) => {
+const PopupCard = ({ isOpen }) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -45,4 +45,4 @@ const UnsupportedDeviceCard = ({ isOpen }) => {
   );
 };
 
-export default UnsupportedDeviceCard;
+export default PopupCard;
