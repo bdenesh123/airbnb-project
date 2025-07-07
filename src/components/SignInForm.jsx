@@ -44,7 +44,7 @@ const SignInForm = () => {
   return (
     <div className='flex flex-col items-center gap-4'>
       {/* Demo Credentials Card */}
-      <Card className='w-[500px]'>
+      <Card className='w-[700px]'>
         <CardContent className='py-3'>
           <div>
             <strong>Demo Credentials:</strong>
@@ -57,7 +57,7 @@ const SignInForm = () => {
           </div>
         </CardContent>
       </Card>
-      <Card className='mx-auto w-[500px]'>
+      <Card className='mx-auto w-[700px]'>
         <CardHeader>
           <h2 className='text-center text-2xl'>Sign In</h2>
           <p className='text-center text-muted-foreground'>

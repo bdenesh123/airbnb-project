@@ -1,10 +1,12 @@
+import userAvatar from '@/assets/Avatar/userAvatar.png';
+
 export const createUser = (user) => {
-  const { avatarUrl, bio, email, firstName, id, initials, lastName, password } =
+  const { avatar, bio, email, firstName, id, initials, lastName, password } =
     user;
 
   return {
     id,
-    avatarUrl,
+    avatar,
     bio,
     email,
     firstName,
@@ -19,7 +21,7 @@ export const createUser = (user) => {
 export const users = [
   createUser({
     id: 1,
-    avatarUrl: 'https://i.pravatar.cc/150?img=1',
+    avatar: userAvatar,
     bio: `Hello, I am User One, your friendly host. I have been hosting for over 5 years and I absolutely love it. Meeting new people and making their stay comfortable and memorable is my passion.
     
     I am a local here and have extensive knowledge about the city and its hidden gems. I can guide you to the best restaurants, parks, and attractions. I am always available to answer any questions or provide assistance, ensuring you have a smooth and enjoyable stay.

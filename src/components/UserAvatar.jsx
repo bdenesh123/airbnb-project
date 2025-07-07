@@ -6,7 +6,7 @@ const UserAvatar = ({ className, imageOnly, user }) => {
   return (
     <div className='flex flex-row items-center gap-2'>
       <Avatar className={className}>
-        <AvatarImage src={user.avatarUrl} alt={displayName} />
+        <AvatarImage src={user.avatar} alt={displayName} />
         <AvatarFallback className='h-10 w-10 bg-secondary'>
           {user.initials}
         </AvatarFallback>

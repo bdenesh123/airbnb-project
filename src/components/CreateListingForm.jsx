@@ -63,7 +63,7 @@ const CreateListingForm = () => {
   ];
 
   return (
-    <Card className='mx-auto w-[800px]'>
+    <Card className='mx-auto w-[1000px]'>
       <CardHeader>
         <h2 className='text-center text-2xl'>Create Listing</h2>
         <p className='text-center text-muted-foreground'>

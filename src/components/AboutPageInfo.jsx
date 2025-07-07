@@ -16,7 +16,7 @@ import { Card, CardContent, CardHeader, Separator } from './ui';
 
 const AboutPageInfo = () => {
   return (
-    <Card className='mx-auto w-full max-w-[800px]'>
+    <Card className='mx-auto w-full max-w-[1000px]'>
       <CardHeader>
         <h2 className='text-center text-2xl font-bold'>
           Welcome to my Airbnb webpage!
