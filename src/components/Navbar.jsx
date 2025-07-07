@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
   Separator,
 } from '@/components/ui';
+import ThemeModeMenu from './ThemeModeMenu';
 
 const NavBar = () => {
   const { setToken, setUser } = useAuth();
@@ -47,6 +48,7 @@ const NavBar = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+          <ThemeModeMenu />
         </div>
       </div>
       <Separator />
