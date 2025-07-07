@@ -59,12 +59,12 @@ const AboutPageInfo = () => {
             platform.
           </p>
           <section>
-            View the project code on{' '}
+            View my project code on{' '}
             <a
               href='https://github.com/bdenesh123/airbnb-project'
               target='_blank'
               rel='noopener noreferrer'
-              className='text-blue-600 underline hover:text-blue-800'
+              className='text-blue-500 underline hover:text-blue-700'
             >
               GitHub
             </a>
