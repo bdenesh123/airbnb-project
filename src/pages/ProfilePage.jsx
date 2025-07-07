@@ -27,7 +27,7 @@ const ProfilePage = () => {
   const displayName = `${user.firstName} ${user.lastName}`;
 
   return (
-    <div className='container py-4'>
+    <div className=' mx-auto w-full max-w-[1000px] py-4'>
       <div className='mb-4 flex flex-col items-center'>
         <UserAvatar
           className='mb-4 h-[150px] w-[150px]'
