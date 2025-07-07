@@ -2,8 +2,7 @@ import { RotateCcw, Tablet } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 import logo from '@/assets/Logo/logo3.png';
-
-import { Card, CardContent } from './ui';
+import { Card, CardContent } from '@/components/ui';
 
 const UnsupportedDeviceCard = ({ isOpen }) => {
   const [show, setShow] = useState(false);
