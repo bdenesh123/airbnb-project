@@ -20,6 +20,6 @@ Testing: End-to-end testing with Cypress
 
 Deployment: Hosted on Vercel
 
-## Live Demo & Code
+## Live Demo
 
 Live Site: https://react-airbnb-project.vercel.app
