@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
   Separator,
 } from '@/components/ui';
+
 import ThemeModeMenu from './ThemeModeMenu';
 
 const NavBar = () => {
