@@ -1,4 +1,4 @@
-# 🏠 Airbnb-Inspired Booking Platform (React Project)
+## 🏠 Airbnb-Inspired Booking Platform (React Project)
 
 This is a mock booking platform inspired by Airbnb and Booking.com, built to explore and implement core React development concepts.
 
