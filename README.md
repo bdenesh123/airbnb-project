@@ -2,36 +2,35 @@
 
 This is a mock booking platform inspired by Airbnb and Booking.com, built to explore and implement core React development concepts.
 
-## Features & Stack:
+## Tech Stack
 
-Hooks & State Management: useState, useEffect, useRef, useContext, React Query, Redux Toolkit, custom hooks
-
-Routing: React Router with dynamic and protected routes
-
-Authentication: JWT (access & refresh tokens) via jose, integrated with Redux and Context
-
-Forms: Built and validated using React Hook Form
-
-API & Data: Axios for API calls, React Query for data fetching & caching
-
-Styling: Tailwind CSS, Shadcn, Radix UI, Lucide icons
-
-Testing: End-to-end testing with Cypress
-
-Deployment: Hosted on Vercel
+- [React](https://reactjs.org): Core framework for building the UI
+- [React Router](https://reactrouter.com/): Client-side routing and navigation
+- [Redux Toolkit](https://redux-toolkit.js.org/): Global state management
+- [React Query](https://tanstack.com/query/latest): Data fetching and caching
+- [React Hook Form](https://react-hook-form.com/): Form handling and validation
+- [Tailwind CSS](https://tailwindcss.com/): Utility-first CSS framework
+- [Shadcn UI](https://ui.shadcn.com/): Component-driven UI library
+- [Radix UI](https://www.radix-ui.com/): Accessible, unstyled UI primitives
+- [Lucide Icons](https://lucide.dev/): Icon library
+- [Axios](https://axios-http.com/): HTTP requests
+- [jose](https://github.com/panva/jose): JWT creation and verification
+- [Cypress](https://www.cypress.io/): End-to-end testing
+- [Vite](https://vitejs.dev): Development server
 
 ## Live Demo
 
 Live Site: https://react-airbnb-project.vercel.app
 
-# Clone the repo
+## Getting Started
 
+```bash
+# Clone the repo
 git clone https://github.com/bdenesh123/airbnb-project.git
 
 # Install dependencies
-
 npm install
 
 # Start development server
-
 npm run dev
+```
