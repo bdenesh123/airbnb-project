@@ -2,7 +2,7 @@
 
 This is a mock booking platform inspired by Airbnb and Booking.com, built to explore and implement core React development concepts.
 
-## 🔧 Tech Stack
+## 🔧 Features & Stack
 
 - [React](https://reactjs.org) - Core framework for building the UI
 - [React Router](https://reactrouter.com/) - Client-side routing and navigation
