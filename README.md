@@ -23,3 +23,15 @@ Deployment: Hosted on Vercel
 ## Live Demo
 
 Live Site: https://react-airbnb-project.vercel.app
+
+# Clone the repo
+
+git clone https://github.com/bdenesh123/airbnb-project.git
+
+# Install dependencies
+
+npm install
+
+# Start development server
+
+npm run dev
