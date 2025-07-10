@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Outlet } from 'react-router-dom';
 
 import { useAuth } from '@/components/AuthProvider';
@@ -15,7 +16,7 @@ const App = () => {
       <div className='relative'>
         {token && <NavBar />}
         <Outlet />
-
+        <Analytics />
         {/* Block UI when portrait/small screen mode is detected*/}
         <PopupCard isOpen={isPortrait} />
       </div>
