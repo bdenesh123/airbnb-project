@@ -20,7 +20,7 @@ const ListingFilters = ({ onChange }) => {
       <Input
         name='search'
         className='w-[400px]'
-        placeholder='Search destinations'
+        placeholder='Where to? London or Paris'
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
