@@ -26,10 +26,13 @@ const AboutPageInfo = () => {
       </CardHeader>
       <CardContent className='space-y-8'>
         <section>
-          <div className='mb-2 flex items-center gap-2'>
-            <Pin />
-            <h3 className='text-xl font-semibold'>Project Overview</h3>
+          <div className='mb-2 flex flex-col gap-2 sm:flex-row sm:items-center'>
+            <Pin className='mx-auto sm:mx-0' />
+            <h3 className='text-center text-lg font-semibold sm:text-left sm:text-xl'>
+              Project Overview
+            </h3>
           </div>
+
           <p>
             This website is a mock booking platform inspired by Airbnb and
             Booking.com. The goal of the project is to gain hands on experience
@@ -74,9 +77,9 @@ const AboutPageInfo = () => {
         <Separator />
 
         <section>
-          <div className='mb-2 flex items-center gap-2'>
-            <Repeat />
-            <h3 className='text-xl font-semibold'>
+          <div className='mb-2 flex flex-col gap-2 sm:flex-row sm:items-center'>
+            <Repeat className='mx-auto sm:mx-0' />
+            <h3 className='text-center text-lg font-semibold sm:text-left sm:text-xl'>
               Hooks and State Management
             </h3>
           </div>
@@ -102,9 +105,11 @@ const AboutPageInfo = () => {
         </section>
         <Separator />
         <section>
-          <div className='mb-2 flex items-center gap-2'>
-            <Rocket />
-            <h3 className='text-xl font-semibold'>Routing & Navigation</h3>
+          <div className='mb-2 flex flex-col gap-2 sm:flex-row sm:items-center'>
+            <Rocket className='mx-auto sm:mx-0' />
+            <h3 className='text-center text-lg font-semibold sm:text-left sm:text-xl'>
+              Routing & Navigation
+            </h3>
           </div>
           <p>
             Client-side routing was implemented using React Router, enabling
@@ -119,9 +124,11 @@ const AboutPageInfo = () => {
         </section>
         <Separator />
         <section>
-          <div className='mb-2 flex items-center gap-2'>
-            <LockKeyhole />
-            <h3 className='text-xl font-semibold'>Authentication</h3>
+          <div className='mb-2 flex flex-col gap-2 sm:flex-row sm:items-center'>
+            <LockKeyhole className='mx-auto sm:mx-0' />
+            <h3 className='text-center text-lg font-semibold sm:text-left sm:text-xl'>
+              Authentication
+            </h3>
           </div>
           <p>
             To simulate a real-world product experience, I implemented an
@@ -136,9 +143,11 @@ const AboutPageInfo = () => {
         </section>
         <Separator />
         <section>
-          <div className='mb-2 flex items-center gap-2'>
-            <Settings />
-            <h3 className='text-xl font-semibold'>Tools & Libraries</h3>
+          <div className='mb-2 flex flex-col gap-2 sm:flex-row sm:items-center'>
+            <Settings className='mx-auto sm:mx-0' />
+            <h3 className='text-center text-lg font-semibold sm:text-left sm:text-xl'>
+              Tools & Libraries
+            </h3>
           </div>
           <ul className='list-inside list-disc space-y-1'>
             <li>React Hook Form - form handling and validation.</li>
@@ -151,9 +160,11 @@ const AboutPageInfo = () => {
         </section>
         <Separator />
         <section>
-          <div className='mb-2 flex items-center gap-2'>
-            <Palette />
-            <h3 className='text-xl font-semibold'>Styling</h3>
+          <div className='mb-2 flex flex-col gap-2 sm:flex-row sm:items-center'>
+            <Palette className='mx-auto sm:mx-0' />
+            <h3 className='text-center text-lg font-semibold sm:text-left sm:text-xl'>
+              Styling
+            </h3>
           </div>
           <ul className='list-inside list-disc space-y-1'>
             <li>Tailwind CSS for fast and responsive UI.</li>
@@ -164,9 +175,11 @@ const AboutPageInfo = () => {
         </section>
         <Separator />
         <section>
-          <div className='mb-2 flex items-center gap-2'>
-            <Router />
-            <h3 className='text-xl font-semibold'>Deployment</h3>
+          <div className='mb-2 flex flex-col gap-2 sm:flex-row sm:items-center'>
+            <Router className='mx-auto sm:mx-0' />
+            <h3 className='text-center text-lg font-semibold sm:text-left sm:text-xl'>
+              Deployment
+            </h3>
           </div>
           <p>
             After development, the application was deployed to Vercel. The

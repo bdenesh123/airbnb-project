@@ -2,7 +2,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 
-import api from '@/api';
 import { useAuth } from '@/components/AuthProvider';
 import Form from '@/components/Form';
 import TextInput from '@/components/TextInput';
@@ -22,7 +21,6 @@ const signInFormSchema = z.object({
 
 const SignInForm = () => {
   const { setToken, setUser } = useAuth();
-
   const signInMutation = useSignInMutation();
 
   const form = useForm({
@@ -42,29 +40,30 @@ const SignInForm = () => {
   };
 
   return (
-    <div className='flex flex-col items-center gap-4'>
-      {/* Demo Credentials Card */}
-      <Card className='w-[700px]'>
-        <CardContent className='py-3'>
+    <div className='flex w-full max-w-md flex-col items-center gap-4'>
+      {/* ✅ Demo Credentials */}
+      <Card className='w-full'>
+        <CardContent className='py-3 text-sm sm:text-base'>
+          <strong>Demo Credentials:</strong>
           <div>
-            <strong>Demo Credentials:</strong>
-            <div>
-              Email: <code>demo@example.com</code>
-            </div>
-            <div>
-              Password: <code>password123</code>
-            </div>
+            Email: <code>demo@example.com</code>
+          </div>
+          <div>
+            Password: <code>password123</code>
           </div>
         </CardContent>
       </Card>
-      <Card className='mx-auto w-[700px]'>
+
+      {/* ✅ Sign In Card */}
+      <Card className='w-full'>
         <CardHeader>
-          <h2 className='text-center text-2xl'>Sign In</h2>
-          <p className='text-center text-muted-foreground'>
+          <h2 className='text-center text-xl sm:text-2xl'>Sign In</h2>
+          <p className='text-center text-sm text-muted-foreground sm:text-base'>
             Sign in using your email and password
           </p>
           <Separator />
         </CardHeader>
+
         <CardContent>
           <Form form={form}>
             <TextInput
@@ -73,7 +72,9 @@ const SignInForm = () => {
               placeholder='name@example.com'
             />
             <TextInput control={form.control} type='password' name='password' />
+
             <Button
+              className='w-full'
               disabled={signInMutation.isPending}
               onClick={form.handleSubmit(onSubmit)}
             >

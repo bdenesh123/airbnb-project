@@ -19,8 +19,8 @@ const App = () => {
         <Outlet />
         <Analytics />
         <SpeedInsights />
-        {/* Block UI when portrait/small screen mode is detected*/}
-        <PopupCard isOpen={isPortrait} />
+        {/* Block UI when portrait/small screen mode is detected
+        <PopupCard isOpen={isPortrait} /> */}
       </div>
     </>
   );

@@ -23,18 +23,19 @@ export const DateRangePicker = ({
   };
 
   return (
-    <div className={cn('grid gap-2', className)}>
+    <div className={cn('grid w-full gap-2', className)}>
       <Popover>
         <PopoverTrigger asChild>
           <Button
             id='date'
             variant='outline'
             className={cn(
-              'w-[250px] justify-start text-left font-normal',
+              'w-full justify-start text-left font-normal sm:w-[250px]',
               !value && 'text-muted-foreground',
             )}
           >
-            <CalendarIcon className='mr-2 h-4 w-4' />
+            <CalendarIcon className='mr-2 h-4 w-4 shrink-0' />
+
             <span className='truncate'>
               {value?.from ? (
                 value.to ? (
@@ -51,6 +52,7 @@ export const DateRangePicker = ({
             </span>
           </Button>
         </PopoverTrigger>
+
         <PopoverContent className='w-auto border-none p-0' align='start'>
           <Calendar
             initialFocus

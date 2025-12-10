@@ -26,11 +26,12 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className='container py-4' data-testid='home-page'>
+    <div className='container px-4 py-4 sm:px-6' data-testid='home-page'>
       <div className='mb-4'>
         <ListingFilters onChange={handleFilters} />
         <Separator className='my-4' />
       </div>
+
       <DataRenderer error={error} isLoading={isLoading}>
         <ListingList listings={listings} />
       </DataRenderer>

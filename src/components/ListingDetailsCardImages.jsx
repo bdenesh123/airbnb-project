@@ -15,11 +15,11 @@ const ListingDetailsCardImages = ({ listing }) => {
   return (
     <>
       <img
-        className='mb-4 h-[500px] w-full rounded-md object-cover'
+        className='mb-4 max-h-[300px] w-full rounded-md object-cover sm:max-h-[400px] md:max-h-[500px] lg:max-h-[600px]'
         src={getImageUrl(listing.images[currentImageIndex])}
         alt={listing.name}
       />
-      <Carousel className='mx-auto mb-4 w-[90%]'>
+      <Carousel className='mx-auto mb-4 w-full sm:w-[90%]'>
         <CarouselContent>
           {listing.images.map((image, index) => (
             <CarouselItem
@@ -29,7 +29,7 @@ const ListingDetailsCardImages = ({ listing }) => {
               isSelected={index === currentImageIndex}
             >
               <img
-                className='h-52 w-full object-cover shadow-sm'
+                className='h-24 w-full rounded-md object-cover shadow-sm sm:h-32 md:h-40'
                 src={getImageUrl(image)}
                 alt={listing.name}
               />

@@ -13,8 +13,9 @@ const SignInPage = () => {
       navigate('/', { replace: true });
     }
   }, [navigate, token, user]);
+
   return (
-    <div className='container flex h-screen items-center justify-center py-4'>
+    <div className='flex min-h-screen items-center justify-center px-4 py-6'>
       <SignInForm />
     </div>
   );

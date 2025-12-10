@@ -41,12 +41,12 @@ const ImagesInput = ({ control, name }) => {
 
   return (
     <div className='flex flex-col gap-2'>
-      <Carousel className='mx-auto w-[90%]'>
+      <Carousel className='mx-auto w-full sm:w-[90%]'>
         <CarouselContent>
           {imageOptions.map((image) => (
             <CarouselItem
               key={image}
-              className='basis-1/3'
+              className='basis-full sm:basis-1/3 md:basis-1/4'
               isSelected={selectedImages.includes(image)}
               onClick={() => handleImageSelect(image)}
             >
